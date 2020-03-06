@@ -1,0 +1,299 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+body{
+    font-family: 'Poppins';
+    line-height: 1.7em;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.text-primary{
+    color: #f38b88;
+}
+
+.lead{
+    font-size: 22px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #f38b88;
+    color: #333;
+}
+
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.py1{ padding: 10px 0px;}
+.py2{ padding: 20px 0px;}
+.py3{ padding: 30px 0px;}
+
+.l-heading{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+/* Navbar */
+#navbar{
+    background: #333;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a{
+    color: #fff;
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li .current{
+    color: #f38b88;
+}
+
+#navbar ul li a:hover{
+    background: #444;
+    color: #f38b88;
+}
+
+/* Showcase */
+#showcase{
+    background: url("../img/showcase.jpg") no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase #showcase-content{
+   color: #fff; 
+   text-align: center;
+   padding-top: 170px;
+}
+
+#showcase #showcase-content h1{
+    font-size: 3.5rem;
+    line-height: 1.2em;
+}
+
+#showcase #showcase-content p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+/* Why Us */
+.whyus{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #444;
+    color: #fff;
+    overflow: auto;
+}
+
+/* Features*/
+/* Images placed at the left */
+.feature-left{
+    height: 450px;
+}
+
+.feature-left .feature-img{
+    float: left;
+    width: 50%;
+    height: 100%;   
+}
+
+.feature-left .feature-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-left .box{
+    float: right;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feature-left .box p{ 
+   font-size: 20px;
+   /* text-align: justify; */
+}
+
+.feature-left .box h2{
+    font-size: 40px;
+    text-align: center;
+ }
+
+ /* Images placed at the right */
+.feature-right{
+    height: 400px;
+}
+
+.feature-right .feature-img{
+    float: right;
+    width: 50%;
+    background-color: pink;
+    height: 100%;
+}
+
+.feature-right .feature-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-right .box{
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feature-right .box p{
+   font-size: 20px;
+   /* text-align: justify; */
+}
+
+.feature-right .box h2{
+    font-size: 40px;
+    text-align: center; 
+ }
+/* About Info */
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* Testimonials */
+#testimonials{
+    height: auto;
+    background: url("../img/test-bg.jpg") no-repeat center center/cover;
+    padding-top: 40px;
+}
+
+#testimonials h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 40px;
+    background: white;
+    opacity: 0.9;
+}
+
+#testimonials .testimonial img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+#contact-form .form-group{
+   margin-bottom: 20px;
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline: none;
+    border-color: #f38b88;
+}
+/* Footer */
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 20px;
+}
